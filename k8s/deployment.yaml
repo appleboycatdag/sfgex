@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: kkb
+  name: sfgex
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: kkb
+      app: sfgex
   template:
     metadata:
       labels:
-        app: kkb
+        app: sfgex
     spec:
       containers:
-      - image: okteto.dev/kkb:latest
-        name: kkb
+      - image: okteto.dev/sfgex:latest
+        name: sfgex
         ports:
         - containerPort: 8080
         env:
